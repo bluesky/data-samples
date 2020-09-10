@@ -51,7 +51,9 @@ to copy the documents into MongoDB for better performance.
 
 ## How to Contribute Data
 
-Export data using databroker-pack
+Export data using [databroker-pack](https://blueskyproject.io/databroker-pack/).
+Be sure to use the ``--copy-external`` and ``--salt=""`` options as illustarted
+below.
 
 
 ```
