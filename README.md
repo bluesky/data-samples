@@ -30,6 +30,14 @@ samples. Within each directory under `catalogs/` you will see a README. To
 make a catalog "discoverable" on your system by databroker first install
 databroker-pack
 
+Clone this repository. At the point `git lfs` will download the most recent
+version of the large files. (It is possible to defer this --- see git lfs.)
+
+```
+git clone https://github.com/bluesky/data-samples
+cd data-samples
+```
+
 ```
 pip install --upgrade databroker-pack
 ```
