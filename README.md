@@ -71,7 +71,7 @@ git track  # list managed formats
 ```
 
 ```
-git track "*.some_extension  # Add a format
+git track "*.some_extension"  # Add a format
 git add .gitattributes
 ```
 
