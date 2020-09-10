@@ -25,9 +25,9 @@ See a
 to learn more. See [git lfs](https://git-lfs.github.com/) for installation and
 setup instructions.
 
-In [TOC.md](./TOC.md) you will find an overview of the collections of data
-samples. Within each directory under `collections/` you will see a README. To
-make a collection "discoverable" on your system by databroker first install
+In [TOC.md](./TOC.md) you will find an overview of the catalogs of data
+samples. Within each directory under `catalogs/` you will see a README. To
+make a catalog "discoverable" on your system by databroker first install
 databroker-pack
 
 ```
@@ -37,17 +37,19 @@ pip install --upgrade databroker-pack
 and then run
 
 ```
-databroker-unpack inplace collections/<directory> <directory>
+databroker-unpack inplace catalogs/<catalog-name> <catalog-name>
 ```
 
 or
 
 ```
-databroker-unpack mongo_normalized collections/<directory> <directory>
+databroker-unpack mongo_normalized catalogs/<catalog-name> <catalog-name>
 ```
 
-to copy the documents into MongoDB for better performance.
-
+to copy the documents into MongoDB for better performance. The last parameter,
+``<catalog-name>`` may be whatever you wish; it gives the name to the catalog in
+a local configuration file on your machine and need not match the name given in
+the `data-samples` repository if you prefer a different one.
 
 ## How to Contribute Data
 
@@ -60,7 +62,7 @@ below.
 databroker-pack [--uids | --query ] --copy-external --salt="" --strict CATALOG TARGET_PATH
 ```
 
-Move the packed directory under the ``collections`` directory in this
+Move the packed directory under the ``catalogs`` directory in this
 repository. Ensure that all external formats are registered as "large files" to
 be managed by git lfs.
 
