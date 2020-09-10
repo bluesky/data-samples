@@ -40,7 +40,7 @@ databroker-unpack inplace collections/<directory> <directory>
 or
 
 ```
-databroker-unpack mongodb collections/<directory> <directory>
+databroker-unpack mongo_normalized collections/<directory> <directory>
 ```
 
 to copy the documents into MongoDB for better performance.
