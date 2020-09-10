@@ -51,4 +51,24 @@ to copy the documents into MongoDB for better performance.
 
 ## How to Contribute Data
 
-TODO
+Export data using databroker-pack
+
+
+```
+databroker-pack [--uids | --query ] --copy-external --salt="" --strict CATALOG TARGET_PATH
+```
+
+Move the packed directory under the ``collections`` directory in this
+repository. Ensure that all external formats are registered as "large files" to
+be managed by git lfs.
+
+```
+git track  # list managed formats
+```
+
+```
+git track "*.some_extension  # Add a format
+git add .gitattributes
+```
+
+Commit and push the files.
