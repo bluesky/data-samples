@@ -8,7 +8,10 @@ instruments. The data is openly licensed as
 
 This data is used by Bluesky Project contributors to:
 
-* 
+* Test new software development on realistic workloads
+* Verify that changes up and down the software stack do not break access,
+  visualization, and processing of existing data (i.e. integration testing)
+* Provide ready example data for demos and teaching materials
 
 ## How to Use The Data
 
