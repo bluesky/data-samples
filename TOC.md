@@ -2,5 +2,5 @@
 
 directory | description
 --------- | -----------
-RSOXS     | samples from NSLS-II RSOXS instrument
 BMM       | samples from NSLS-II BMM instrument
+RSOXS     | samples from NSLS-II RSOXS instrument

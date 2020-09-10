@@ -1,0 +1,14 @@
+sources:
+  packed_catalog:
+    args:
+      paths:
+      - /tmp/download_me/documents/*.msgpack
+      root_map:
+        ac4222259664d5857b80c324d572a83c: external_files/ac4222259664d5857b80c324d572a83c
+    driver: bluesky-msgpack-catalog
+    metadata:
+      generated_by:
+        library: databroker_pack
+        version: 0.3.0
+      relative_paths:
+      - ./documents/*.msgpack
